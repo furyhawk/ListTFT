@@ -6,9 +6,9 @@ import Loading from '../components/Loading';
 
 
 const ChampionScreen = props => {
-//   const id = props.navigation.getParam('id');
-
-  return <Champion note={props.Champion} />;
+  const id = props.navigation.getParam('id');
+  console.log(props);
+  return <Champion champion={id} />;
 };
 
 export default ChampionScreen;

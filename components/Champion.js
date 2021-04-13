@@ -7,10 +7,11 @@ const ChampionView = styled.ScrollView`
 `;
 
 const Champion = ({ champion }) => {
+  console.log(champion);
   return (
     <ChampionView>
       <Text>
-          {champion}
+          champ
         {/* Note by {note.author.username} / Published{' '} */}
         {/* {format(new Date(note.createdAt), 'MMM do yyyy')} */}
       </Text>

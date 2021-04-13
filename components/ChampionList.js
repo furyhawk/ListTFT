@@ -4,6 +4,7 @@ import styled from 'styled-components/native';
 
 import Champion from './Champion';
 
+// import champions from '../assets/champions.json';
 
 
 // FeedView styled-component definition
