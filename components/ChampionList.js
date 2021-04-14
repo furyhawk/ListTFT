@@ -25,13 +25,13 @@ const ChampionFeed = props => {
     <View>
       <FlatList
         data={props.champions}
-        keyExtractor={item => item.id.toString()}
+        keyExtractor={item => item.championId.toString()}
         ItemSeparatorComponent={() => <Separator />}
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() =>
               props.navigation.navigate('Champion', {
-                id: item.id
+                id: item.championId
               })
             }
           >

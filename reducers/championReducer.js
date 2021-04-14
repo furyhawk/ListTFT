@@ -1,6 +1,6 @@
 import uuidV4 from 'uuid/v4'
 // import { ADD_BOOK, REMOVE_BOOK } from '../actions'
-import champions from '../assets/champions.json';
+const champions = require('../assets/champions.json');
 
 
 const initialState = {
@@ -26,7 +26,8 @@ const championReducer = (state = initialState, action) => {
         //   }
 
         default:
-            return state
+            // console.log(state);
+            return state;
     }
 }
 
